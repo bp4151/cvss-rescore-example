@@ -1,0 +1,604 @@
+{
+  "vulnerabilities": [
+    {
+      "id": "SNYK-PYTHON-CERTIFI-3164749",
+      "title": "Insufficient Verification of Data Authenticity",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:N",
+      "credit": [
+        "Joel Reardon"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,2022.12.7)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "2022.12.7"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "medium",
+      "cvssScore": 6.8,
+      "functions": [],
+      "malicious": false,
+      "moduleName": "certifi",
+      "references": [
+        {
+          "url": "https://github.com/certifi/python-certifi/commit/9e9e840925d7b8e76c76fdac1fab7e6e88c1c3b8",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/oxX69KFvsm4/m/yLohoVqtCgAJ",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 6.6,
+          "modificationTime": "2023-01-21T11:01:34.289666Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-12-14T01:12:06.023186Z"
+        }
+      ],
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Insufficient Verification of Data Authenticity resulting in Certifi root certificate removal from TrustCor. The root certificates are being removed pursuant to an investigation prompted by media reporting that TrustCor's ownership also operated a business that produced spyware.\n## Remediation\nUpgrade `certifi` to version 2022.12.7 or higher.\n## References\n- [GitHub Commit](https://github.com/certifi/python-certifi/commit/9e9e840925d7b8e76c76fdac1fab7e6e88c1c3b8)\n- [Google Groups Forum](https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/oxX69KFvsm4/m/yLohoVqtCgAJ)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-23491"
+        ],
+        "CWE": [
+          "CWE-345"
+        ],
+        "GHSA": [
+          "GHSA-43fp-rhv2-5gv8"
+        ]
+      },
+      "packageName": "certifi",
+      "proprietary": false,
+      "creationTime": "2022-12-08T09:22:24.241183Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2022-12-07T23:05:18Z",
+      "packageManager": "pip",
+      "publicationTime": "2022-12-08T09:37:59.689622Z",
+      "modificationTime": "2023-01-21T11:01:34.289666Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "bruberbettorbot@0.0.0",
+        "requests@2.27.1",
+        "certifi@2021.10.8"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "certifi",
+      "version": "2021.10.8"
+    },
+    {
+      "id": "SNYK-PYTHON-CERTIFI-3164749",
+      "title": "Insufficient Verification of Data Authenticity",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:N",
+      "credit": [
+        "Joel Reardon"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,2022.12.7)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "2022.12.7"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "medium",
+      "cvssScore": 6.8,
+      "functions": [],
+      "malicious": false,
+      "moduleName": "certifi",
+      "references": [
+        {
+          "url": "https://github.com/certifi/python-certifi/commit/9e9e840925d7b8e76c76fdac1fab7e6e88c1c3b8",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/oxX69KFvsm4/m/yLohoVqtCgAJ",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+          "cvssV3BaseScore": 6.6,
+          "modificationTime": "2023-01-21T11:01:34.289666Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-12-14T01:12:06.023186Z"
+        }
+      ],
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Insufficient Verification of Data Authenticity resulting in Certifi root certificate removal from TrustCor. The root certificates are being removed pursuant to an investigation prompted by media reporting that TrustCor's ownership also operated a business that produced spyware.\n## Remediation\nUpgrade `certifi` to version 2022.12.7 or higher.\n## References\n- [GitHub Commit](https://github.com/certifi/python-certifi/commit/9e9e840925d7b8e76c76fdac1fab7e6e88c1c3b8)\n- [Google Groups Forum](https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/oxX69KFvsm4/m/yLohoVqtCgAJ)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-23491"
+        ],
+        "CWE": [
+          "CWE-345"
+        ],
+        "GHSA": [
+          "GHSA-43fp-rhv2-5gv8"
+        ]
+      },
+      "packageName": "certifi",
+      "proprietary": false,
+      "creationTime": "2022-12-08T09:22:24.241183Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2022-12-07T23:05:18Z",
+      "packageManager": "pip",
+      "publicationTime": "2022-12-08T09:37:59.689622Z",
+      "modificationTime": "2023-01-21T11:01:34.289666Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "bruberbettorbot@0.0.0",
+        "mailjet-rest@1.3.4",
+        "requests@2.27.1",
+        "certifi@2021.10.8"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "certifi",
+      "version": "2021.10.8"
+    },
+    {
+      "id": "SNYK-PYTHON-SETUPTOOLS-3180412",
+      "title": "Regular Expression Denial of Service (ReDoS)",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        "Sebastian Chnelik"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,65.5.1)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "65.5.1"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "medium",
+      "cvssScore": 5.9,
+      "functions": [],
+      "malicious": false,
+      "moduleName": "setuptools",
+      "references": [
+        {
+          "url": "https://github.com/pypa/setuptools/commit/43a9c9bfa6aa626ec2a22540bea28d2ca77964be",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/pypa/setuptools/issues/3659",
+          "title": "GitHub Issue"
+        },
+        {
+          "url": "https://github.com/pypa/setuptools/releases/tag/v65.5.1",
+          "title": "GitHub Release"
+        },
+        {
+          "url": "https://pyup.io/posts/pyup-discovers-redos-vulnerabilities-in-top-python-packages/",
+          "title": "Pyup Blog"
+        },
+        {
+          "url": "https://github.com/pypa/setuptools/blob/fe8a98e696241487ba6ac9f91faa38ade939ec5d/setuptools/package_index.py%23L200",
+          "title": "Vulnerable Code"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 4.3,
+          "modificationTime": "2023-01-17T11:01:31.743586Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-01-06T13:59:58.537589Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2023-01-07T01:10:43.489734Z"
+        }
+      ],
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Regular Expression Denial of Service (ReDoS) via crafted HTML package or custom `PackageIndex` page.\r\n\r\n**Note:**\r\n\r\nOnly a small portion of the user base is impacted by this flaw. Setuptools maintainers pointed out that `package_index` is deprecated (not formally, but “in spirit”) and the vulnerability isn't reachable through standard, recommended workflows.\n\n## Details\n\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its original and legitimate users. There are many types of DoS attacks, ranging from trying to clog the network pipes to the system by generating a large volume of traffic from many machines (a Distributed Denial of Service - DDoS - attack) to sending crafted requests that cause a system to crash or take a disproportional amount of time to process.\n\nThe Regular expression Denial of Service (ReDoS) is a type of Denial of Service attack. Regular expressions are incredibly powerful, but they aren't very intuitive and can ultimately end up making it easy for attackers to take your site down.\n\nLet’s take the following regular expression as an example:\n```js\nregex = /A(B|C+)+D/\n```\n\nThis regular expression accomplishes the following:\n- `A` The string must start with the letter 'A'\n- `(B|C+)+` The string must then follow the letter A with either the letter 'B' or some number of occurrences of the letter 'C' (the `+` matches one or more times). The `+` at the end of this section states that we can look for one or more matches of this section.\n- `D` Finally, we ensure this section of the string ends with a 'D'\n\nThe expression would match inputs such as `ABBD`, `ABCCCCD`, `ABCBCCCD` and `ACCCCCD`\n\nIt most cases, it doesn't take very long for a regex engine to find a match:\n\n```bash\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCD\")'\n0.04s user 0.01s system 95% cpu 0.052 total\n\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCX\")'\n1.79s user 0.02s system 99% cpu 1.812 total\n```\n\nThe entire process of testing it against a 30 characters long string takes around ~52ms. But when given an invalid string, it takes nearly two seconds to complete the test, over ten times as long as it took to test a valid string. The dramatic difference is due to the way regular expressions get evaluated.\n\nMost Regex engines will work very similarly (with minor differences). The engine will match the first possible way to accept the current character and proceed to the next one. If it then fails to match the next one, it will backtrack and see if there was another way to digest the previous character. If it goes too far down the rabbit hole only to find out the string doesn’t match in the end, and if many characters have multiple valid regex paths, the number of backtracking steps can become very large, resulting in what is known as _catastrophic backtracking_.\n\nLet's look at how our expression runs into this problem, using a shorter string: \"ACCCX\". While it seems fairly straightforward, there are still four different ways that the engine could match those three C's:\n1. CCC\n2. CC+C\n3. C+CC\n4. C+C+C.\n\nThe engine has to try each of those combinations to see if any of them potentially match against the expression. When you combine that with the other steps the engine must take, we can use [RegEx 101 debugger](https://regex101.com/debugger) to see the engine has to take a total of 38 steps before it can determine the string doesn't match.\n\nFrom there, the number of steps the engine must use to validate a string just continues to grow.\n\n| String | Number of C's | Number of steps |\n| -------|-------------:| -----:|\n| ACCCX | 3 | 38\n| ACCCCX | 4 | 71\n| ACCCCCX | 5 | 136\n| ACCCCCCCCCCCCCCX | 14 | 65,553\n\n\nBy the time the string includes 14 C's, the engine has to take over 65,000 steps just to see if the string is valid. These extreme situations can cause them to work very slowly (exponentially related to input size, as shown above), allowing an attacker to exploit this and can cause the service to excessively consume CPU, resulting in a Denial of Service.\n\n## Remediation\nUpgrade `setuptools` to version 65.5.1 or higher.\n## References\n- [GitHub Commit](https://github.com/pypa/setuptools/commit/43a9c9bfa6aa626ec2a22540bea28d2ca77964be)\n- [GitHub Issue](https://github.com/pypa/setuptools/issues/3659)\n- [GitHub Release](https://github.com/pypa/setuptools/releases/tag/v65.5.1)\n- [Pyup Blog](https://pyup.io/posts/pyup-discovers-redos-vulnerabilities-in-top-python-packages/)\n- [Vulnerable Code](https://github.com/pypa/setuptools/blob/fe8a98e696241487ba6ac9f91faa38ade939ec5d/setuptools/package_index.py#L200)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-40897"
+        ],
+        "CWE": [
+          "CWE-1333"
+        ]
+      },
+      "packageName": "setuptools",
+      "proprietary": false,
+      "creationTime": "2022-12-23T07:07:14.051409Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2022-12-23T06:58:42Z",
+      "packageManager": "pip",
+      "publicationTime": "2022-12-23T07:07:14.261999Z",
+      "modificationTime": "2023-01-17T11:01:31.743586Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "bruberbettorbot@0.0.0",
+        "pylint@2.13.8",
+        "astroid@2.11.4",
+        "setuptools@57.0.0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "setuptools",
+      "version": "57.0.0"
+    }
+  ],
+  "ok": false,
+  "dependencyCount": 32,
+  "org": "bp4151",
+  "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.25.0\nignore: {}\npatch: {}\n",
+  "isPrivate": true,
+  "licensesPolicy": {
+    "severities": {},
+    "orgLicenseRules": {
+      "AGPL-1.0": {
+        "licenseType": "AGPL-1.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "AGPL-3.0": {
+        "licenseType": "AGPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "Artistic-1.0": {
+        "licenseType": "Artistic-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "Artistic-2.0": {
+        "licenseType": "Artistic-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CDDL-1.0": {
+        "licenseType": "CDDL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CPOL-1.02": {
+        "licenseType": "CPOL-1.02",
+        "severity": "high",
+        "instructions": ""
+      },
+      "EPL-1.0": {
+        "licenseType": "EPL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-2.0": {
+        "licenseType": "GPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "GPL-3.0": {
+        "licenseType": "GPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "LGPL-2.0": {
+        "licenseType": "LGPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-2.1": {
+        "licenseType": "LGPL-2.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-3.0": {
+        "licenseType": "LGPL-3.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-1.1": {
+        "licenseType": "MPL-1.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-2.0": {
+        "licenseType": "MPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MS-RL": {
+        "licenseType": "MS-RL",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "SimPL-2.0": {
+        "licenseType": "SimPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      }
+    }
+  },
+  "packageManager": "pip",
+  "ignoreSettings": {
+    "adminOnly": false,
+    "reasonRequired": false,
+    "disregardFilesystemIgnores": false
+  },
+  "summary": "3 vulnerable dependency paths",
+  "remediation": {
+    "unresolved": [
+      {
+        "id": "SNYK-PYTHON-CERTIFI-3164749",
+        "title": "Insufficient Verification of Data Authenticity",
+        "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:N",
+        "credit": [
+          "Joel Reardon"
+        ],
+        "semver": {
+          "vulnerable": [
+            "[,2022.12.7)"
+          ]
+        },
+        "exploit": "Not Defined",
+        "fixedIn": [
+          "2022.12.7"
+        ],
+        "patches": [],
+        "insights": {
+          "triageAdvice": null
+        },
+        "language": "python",
+        "severity": "medium",
+        "cvssScore": 6.8,
+        "functions": [],
+        "malicious": false,
+        "moduleName": "certifi",
+        "references": [
+          {
+            "url": "https://github.com/certifi/python-certifi/commit/9e9e840925d7b8e76c76fdac1fab7e6e88c1c3b8",
+            "title": "GitHub Commit"
+          },
+          {
+            "url": "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/oxX69KFvsm4/m/yLohoVqtCgAJ",
+            "title": "Google Groups Forum"
+          }
+        ],
+        "cvssDetails": [
+          {
+            "assigner": "SUSE",
+            "severity": "medium",
+            "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+            "cvssV3BaseScore": 6.6,
+            "modificationTime": "2023-01-21T11:01:34.289666Z"
+          },
+          {
+            "assigner": "NVD",
+            "severity": "high",
+            "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+            "cvssV3BaseScore": 7.5,
+            "modificationTime": "2022-12-14T01:12:06.023186Z"
+          }
+        ],
+        "description": "## Overview\n\nAffected versions of this package are vulnerable to Insufficient Verification of Data Authenticity resulting in Certifi root certificate removal from TrustCor. The root certificates are being removed pursuant to an investigation prompted by media reporting that TrustCor's ownership also operated a business that produced spyware.\n## Remediation\nUpgrade `certifi` to version 2022.12.7 or higher.\n## References\n- [GitHub Commit](https://github.com/certifi/python-certifi/commit/9e9e840925d7b8e76c76fdac1fab7e6e88c1c3b8)\n- [Google Groups Forum](https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/oxX69KFvsm4/m/yLohoVqtCgAJ)\n",
+        "identifiers": {
+          "CVE": [
+            "CVE-2022-23491"
+          ],
+          "CWE": [
+            "CWE-345"
+          ],
+          "GHSA": [
+            "GHSA-43fp-rhv2-5gv8"
+          ]
+        },
+        "packageName": "certifi",
+        "proprietary": false,
+        "creationTime": "2022-12-08T09:22:24.241183Z",
+        "functions_new": [],
+        "alternativeIds": [],
+        "disclosureTime": "2022-12-07T23:05:18Z",
+        "packageManager": "pip",
+        "publicationTime": "2022-12-08T09:37:59.689622Z",
+        "modificationTime": "2023-01-21T11:01:34.289666Z",
+        "socialTrendAlert": false,
+        "from": [
+          "bruberbettorbot@0.0.0",
+          "mailjet-rest@1.3.4",
+          "requests@2.27.1",
+          "certifi@2021.10.8"
+        ],
+        "upgradePath": [],
+        "isUpgradable": false,
+        "isPatchable": false,
+        "isPinnable": true,
+        "isRuntime": false,
+        "name": "certifi",
+        "version": "2021.10.8",
+        "severityWithCritical": "medium"
+      },
+      {
+        "id": "SNYK-PYTHON-SETUPTOOLS-3180412",
+        "title": "Regular Expression Denial of Service (ReDoS)",
+        "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "credit": [
+          "Sebastian Chnelik"
+        ],
+        "semver": {
+          "vulnerable": [
+            "[,65.5.1)"
+          ]
+        },
+        "exploit": "Not Defined",
+        "fixedIn": [
+          "65.5.1"
+        ],
+        "patches": [],
+        "insights": {
+          "triageAdvice": null
+        },
+        "language": "python",
+        "severity": "medium",
+        "cvssScore": 5.9,
+        "functions": [],
+        "malicious": false,
+        "moduleName": "setuptools",
+        "references": [
+          {
+            "url": "https://github.com/pypa/setuptools/commit/43a9c9bfa6aa626ec2a22540bea28d2ca77964be",
+            "title": "GitHub Commit"
+          },
+          {
+            "url": "https://github.com/pypa/setuptools/issues/3659",
+            "title": "GitHub Issue"
+          },
+          {
+            "url": "https://github.com/pypa/setuptools/releases/tag/v65.5.1",
+            "title": "GitHub Release"
+          },
+          {
+            "url": "https://pyup.io/posts/pyup-discovers-redos-vulnerabilities-in-top-python-packages/",
+            "title": "Pyup Blog"
+          },
+          {
+            "url": "https://github.com/pypa/setuptools/blob/fe8a98e696241487ba6ac9f91faa38ade939ec5d/setuptools/package_index.py%23L200",
+            "title": "Vulnerable Code"
+          }
+        ],
+        "cvssDetails": [
+          {
+            "assigner": "SUSE",
+            "severity": "medium",
+            "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+            "cvssV3BaseScore": 4.3,
+            "modificationTime": "2023-01-17T11:01:31.743586Z"
+          },
+          {
+            "assigner": "Red Hat",
+            "severity": "medium",
+            "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "cvssV3BaseScore": 5.9,
+            "modificationTime": "2023-01-06T13:59:58.537589Z"
+          },
+          {
+            "assigner": "NVD",
+            "severity": "medium",
+            "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "cvssV3BaseScore": 5.9,
+            "modificationTime": "2023-01-07T01:10:43.489734Z"
+          }
+        ],
+        "description": "## Overview\n\nAffected versions of this package are vulnerable to Regular Expression Denial of Service (ReDoS) via crafted HTML package or custom `PackageIndex` page.\r\n\r\n**Note:**\r\n\r\nOnly a small portion of the user base is impacted by this flaw. Setuptools maintainers pointed out that `package_index` is deprecated (not formally, but “in spirit”) and the vulnerability isn't reachable through standard, recommended workflows.\n\n## Details\n\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its original and legitimate users. There are many types of DoS attacks, ranging from trying to clog the network pipes to the system by generating a large volume of traffic from many machines (a Distributed Denial of Service - DDoS - attack) to sending crafted requests that cause a system to crash or take a disproportional amount of time to process.\n\nThe Regular expression Denial of Service (ReDoS) is a type of Denial of Service attack. Regular expressions are incredibly powerful, but they aren't very intuitive and can ultimately end up making it easy for attackers to take your site down.\n\nLet’s take the following regular expression as an example:\n```js\nregex = /A(B|C+)+D/\n```\n\nThis regular expression accomplishes the following:\n- `A` The string must start with the letter 'A'\n- `(B|C+)+` The string must then follow the letter A with either the letter 'B' or some number of occurrences of the letter 'C' (the `+` matches one or more times). The `+` at the end of this section states that we can look for one or more matches of this section.\n- `D` Finally, we ensure this section of the string ends with a 'D'\n\nThe expression would match inputs such as `ABBD`, `ABCCCCD`, `ABCBCCCD` and `ACCCCCD`\n\nIt most cases, it doesn't take very long for a regex engine to find a match:\n\n```bash\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCD\")'\n0.04s user 0.01s system 95% cpu 0.052 total\n\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCX\")'\n1.79s user 0.02s system 99% cpu 1.812 total\n```\n\nThe entire process of testing it against a 30 characters long string takes around ~52ms. But when given an invalid string, it takes nearly two seconds to complete the test, over ten times as long as it took to test a valid string. The dramatic difference is due to the way regular expressions get evaluated.\n\nMost Regex engines will work very similarly (with minor differences). The engine will match the first possible way to accept the current character and proceed to the next one. If it then fails to match the next one, it will backtrack and see if there was another way to digest the previous character. If it goes too far down the rabbit hole only to find out the string doesn’t match in the end, and if many characters have multiple valid regex paths, the number of backtracking steps can become very large, resulting in what is known as _catastrophic backtracking_.\n\nLet's look at how our expression runs into this problem, using a shorter string: \"ACCCX\". While it seems fairly straightforward, there are still four different ways that the engine could match those three C's:\n1. CCC\n2. CC+C\n3. C+CC\n4. C+C+C.\n\nThe engine has to try each of those combinations to see if any of them potentially match against the expression. When you combine that with the other steps the engine must take, we can use [RegEx 101 debugger](https://regex101.com/debugger) to see the engine has to take a total of 38 steps before it can determine the string doesn't match.\n\nFrom there, the number of steps the engine must use to validate a string just continues to grow.\n\n| String | Number of C's | Number of steps |\n| -------|-------------:| -----:|\n| ACCCX | 3 | 38\n| ACCCCX | 4 | 71\n| ACCCCCX | 5 | 136\n| ACCCCCCCCCCCCCCX | 14 | 65,553\n\n\nBy the time the string includes 14 C's, the engine has to take over 65,000 steps just to see if the string is valid. These extreme situations can cause them to work very slowly (exponentially related to input size, as shown above), allowing an attacker to exploit this and can cause the service to excessively consume CPU, resulting in a Denial of Service.\n\n## Remediation\nUpgrade `setuptools` to version 65.5.1 or higher.\n## References\n- [GitHub Commit](https://github.com/pypa/setuptools/commit/43a9c9bfa6aa626ec2a22540bea28d2ca77964be)\n- [GitHub Issue](https://github.com/pypa/setuptools/issues/3659)\n- [GitHub Release](https://github.com/pypa/setuptools/releases/tag/v65.5.1)\n- [Pyup Blog](https://pyup.io/posts/pyup-discovers-redos-vulnerabilities-in-top-python-packages/)\n- [Vulnerable Code](https://github.com/pypa/setuptools/blob/fe8a98e696241487ba6ac9f91faa38ade939ec5d/setuptools/package_index.py#L200)\n",
+        "identifiers": {
+          "CVE": [
+            "CVE-2022-40897"
+          ],
+          "CWE": [
+            "CWE-1333"
+          ]
+        },
+        "packageName": "setuptools",
+        "proprietary": false,
+        "creationTime": "2022-12-23T07:07:14.051409Z",
+        "functions_new": [],
+        "alternativeIds": [],
+        "disclosureTime": "2022-12-23T06:58:42Z",
+        "packageManager": "pip",
+        "publicationTime": "2022-12-23T07:07:14.261999Z",
+        "modificationTime": "2023-01-17T11:01:31.743586Z",
+        "socialTrendAlert": false,
+        "from": [
+          "bruberbettorbot@0.0.0",
+          "pylint@2.13.8",
+          "astroid@2.11.4",
+          "setuptools@57.0.0"
+        ],
+        "upgradePath": [],
+        "isUpgradable": false,
+        "isPatchable": false,
+        "isPinnable": true,
+        "isRuntime": false,
+        "name": "setuptools",
+        "version": "57.0.0",
+        "severityWithCritical": "medium"
+      }
+    ],
+    "upgrade": {},
+    "patch": {},
+    "ignore": {},
+    "pin": {
+      "certifi@2021.10.8": {
+        "upgradeTo": "certifi@2022.12.7",
+        "vulns": [
+          "SNYK-PYTHON-CERTIFI-3164749"
+        ],
+        "isTransitive": true
+      },
+      "setuptools@57.0.0": {
+        "upgradeTo": "setuptools@65.5.1",
+        "vulns": [
+          "SNYK-PYTHON-SETUPTOOLS-3180412"
+        ],
+        "isTransitive": true
+      }
+    }
+  },
+  "filesystemPolicy": false,
+  "filtered": {
+    "ignore": [],
+    "patch": []
+  },
+  "uniqueCount": 2,
+  "targetFile": "Pipfile",
+  "projectName": "bruberbettorbot",
+  "displayTargetFile": "Pipfile",
+  "path": "C:\\Users\\bp415\\PycharmProjects\\bruberbettorbot"
+}
