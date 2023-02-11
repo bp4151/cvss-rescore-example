@@ -35,3 +35,74 @@ pipenv shell
 pipenv install
 python main.py
 ```
+
+## Sample Output
+
+```
+2023-02-11 11:19:05,727 - __main__ - INFO - 
++------------------------+--------------------------------------------------------------+
+| field                  | value                                                        |
++------------------------+--------------------------------------------------------------+
+| package_name           | certifi                                                      |
+| package_version        | 2021.10.8                                                    |
+| original_vector_string | CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:N                 |
+| original_score         | 6.8                                                          |
+| original_severity      | medium                                                       |
+| rescored_vector_string | CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:N/MAV:N/MAC:H/MPR |
+|                        | :H/MUI:N/MC:N/MI:N/MA:N/RL:O/RC:C                            |
+| rescored_score         | 0.0                                                          |
+| rescored_severity      | None                                                         |
+| rules_applied          | [{'description': 'Fix version exists, set RL=O',             |
+|                        | 'vector_changes': [{'vector': 'RL', 'value': 'O'}]},         |
+|                        | {'description': 'CVE exists, set RC=C', 'vector_changes':    |
+|                        | [{'vector': 'RC', 'value': 'C'}]}, {'description': 'Certifi  |
+|                        | TrustCor Vulnerability', 'vector_changes': [{'vector':       |
+|                        | 'MAC', 'value': 'H'}, {'vector': 'MC', 'value': 'N'},        |
+|                        | {'vector': 'MI', 'value': 'N'}, {'vector': 'MA', 'value':    |
+|                        | 'N'}]}]                                                      |
++------------------------+--------------------------------------------------------------+
+2023-02-11 11:19:05,732 - __main__ - INFO - 
++------------------------+--------------------------------------------------------------+
+| field                  | value                                                        |
++------------------------+--------------------------------------------------------------+
+| package_name           | certifi                                                      |
+| package_version        | 2021.10.8                                                    |
+| original_vector_string | CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:N                 |
+| original_score         | 6.8                                                          |
+| original_severity      | medium                                                       |
+| rescored_vector_string | CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:N/MAV:N/MAC:H/MPR |
+|                        | :H/MUI:N/MC:N/MI:N/MA:N/RL:O/RC:C                            |
+| rescored_score         | 0.0                                                          |
+| rescored_severity      | None                                                         |
+| rules_applied          | [{'description': 'Fix version exists, set RL=O',             |
+|                        | 'vector_changes': [{'vector': 'RL', 'value': 'O'}]},         |
+|                        | {'description': 'CVE exists, set RC=C', 'vector_changes':    |
+|                        | [{'vector': 'RC', 'value': 'C'}]}, {'description': 'Certifi  |
+|                        | TrustCor Vulnerability', 'vector_changes': [{'vector':       |
+|                        | 'MAC', 'value': 'H'}, {'vector': 'MC', 'value': 'N'},        |
+|                        | {'vector': 'MI', 'value': 'N'}, {'vector': 'MA', 'value':    |
+|                        | 'N'}]}]                                                      |
++------------------------+--------------------------------------------------------------+
+2023-02-11 11:19:05,737 - __main__ - INFO - 
++------------------------+--------------------------------------------------------------+
+| field                  | value                                                        |
++------------------------+--------------------------------------------------------------+
+| package_name           | setuptools                                                   |
+| package_version        | 57.0.0                                                       |
+| original_vector_string | CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H                 |
+| original_score         | 5.9                                                          |
+| original_severity      | medium                                                       |
+| rescored_vector_string | CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H/MAV:N/MAC:H/MPR |
+|                        | :N/MUI:N/MC:N/MI:N/MA:N/RL:O/RC:C                            |
+| rescored_score         | 0.0                                                          |
+| rescored_severity      | None                                                         |
+| rules_applied          | [{'description': 'Fix version exists, set RL=O',             |
+|                        | 'vector_changes': [{'vector': 'RL', 'value': 'O'}]},         |
+|                        | {'description': 'CVE exists, set RC=C', 'vector_changes':    |
+|                        | [{'vector': 'RC', 'value': 'C'}]}, {'description':           |
+|                        | 'setuptools transitive ReDos', 'vector_changes': [{'vector': |
+|                        | 'MAC', 'value': 'H'}, {'vector': 'MC', 'value': 'N'},        |
+|                        | {'vector': 'MI', 'value': 'N'}, {'vector': 'MA', 'value':    |
+|                        | 'N'}]}]                                                      |
++------------------------+--------------------------------------------------------------+
+```
