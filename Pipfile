@@ -5,7 +5,7 @@ name = "pypi"
 
 [packages]
 requests = "*"
-cvss-rescore = "0.0.3"
+cvss-rescore = "*"
 
 [dev-packages]
 

@@ -55,7 +55,7 @@ def main():
             modified_vector_string, \
                 modified_environmental_score, \
                 modified_severity, rules_applied = \
-                cr.get_modified_cvss(record=vulnerability, original_vector_string=original_cvss_string, logger=logger)
+                cr.get_modified_cvss(record=vulnerability, original_vector_string=original_cvss_string)
 
             # everything below is just output
             fields = {
