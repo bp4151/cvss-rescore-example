@@ -1,0 +1,66 @@
+[
+    {
+        "description": "Fix version exists, set RL=O",
+        "rule": "fixedIn",
+        "vector_changes": [
+            {
+                "vector": "RL",
+                "value": "O"
+            }
+        ]
+    },
+    {
+        "description": "CVE exists, set RC=C",
+        "rule": "identifiers.CVE",
+        "vector_changes": [
+            {
+                "vector": "RC",
+                "value": "C"
+            }
+        ]
+    },
+    {
+        "description": "Certifi TrustCor Vulnerability",
+        "rule": "packageName == 'certifi' and version == '2021.10.8'" ,
+        "vector_changes": [
+            {
+                "vector": "MAC",
+                "value": "H"
+            },
+            {
+                "vector": "MC",
+                "value": "N"
+            },
+            {
+                "vector": "MI",
+                "value": "N"
+            },
+            {
+                "vector": "MA",
+                "value": "N"
+            }
+        ]
+    },
+    {
+        "description": "setuptools transitive ReDos",
+        "rule": "packageName == 'setuptools' and version == '57.0.0' and from[1] != 'setuptools'" ,
+        "vector_changes": [
+            {
+                "vector": "MAC",
+                "value": "H"
+            },
+            {
+                "vector": "MC",
+                "value": "N"
+            },
+            {
+                "vector": "MI",
+                "value": "N"
+            },
+            {
+                "vector": "MA",
+                "value": "N"
+            }
+        ]
+    }
+]
