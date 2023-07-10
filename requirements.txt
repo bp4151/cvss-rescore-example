@@ -1,5 +1,5 @@
 certifi==2023.5.7
-charset-normalizer==3.0.1
+charset-normalizer==3.2.0
 cvss==2.6
 cvss-rescore==0.0.5
 doppler-env==0.3.1
